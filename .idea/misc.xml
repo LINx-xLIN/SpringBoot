@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/springboot-jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-springdata/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-springsecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mail/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-solr/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-poi/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-activemq/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-test/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
