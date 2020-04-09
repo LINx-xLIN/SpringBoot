@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+                xmlns:sec="http:www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+<h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]</h1>
+
+
+获得当前用户名：<label sec:authentication="principal.username"></label><br>
+获得当前用户名：
+<label th:text="${session.SPRING_SECURITY_CONTEXT.authentication.principal.username}"></label><br>
+
+
+获得当前用户的权限：
+<div th:each="permission:${session.SPRING_SECURITY_CONTEXT.authentication.principal.permissions}">
+    <div th:text="${permission.permissionWord}"></div>
+
+</div>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out">
+
+    <ul>
+        <li sec:authorize="hasAuthority('LIST')">系统查询</li>
+        <li sec:authorize="hasAuthority('ADD')">系统增加</li>
+        <li sec:authorize="hasAuthority('DELETE')">系统删除</li>
+        <li sec:authorize="hasAuthority('EDIT')">系统更新</li>
+    </ul>
+
+</form>
+
+
+</body>
+</html>

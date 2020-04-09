@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<dataConfig>   
+<dataSource type="JdbcDataSource"   
+		  driver="com.mysql.jdbc.Driver"   
+		  url="jdbc:mysql://localhost:3306/oos"   
+		  user="root"   
+		  password="root"/>   
+<document>   
+	<entity name="pmsProductItem" query="SELECT a.*,b.name categoryName FROM pms_product_item a LEFT JOIN pms_product_category b ON a.cid = b.id">
+		 <field column="id" name="id"/> 
+		 <field column="title" name="title"/> 
+		 <field column="ingredients" name="ingredients"/> 
+		 <field column="price" name="price"/> 
+		 <field column="num" name="num"/> 
+		 <field column="image" name="image"/> 
+		 <field column="cid" name="cid"/> 
+		 <field column="status" name="status"/> 
+		 <field column="create" name="create"/> 
+		 <field column="categoryName" name="categoryName"/> 
+		  
+	</entity>   
+</document>   
+</dataConfig>

@@ -1,0 +1,6 @@
+26-Mar-2020 11:24:52.110 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Mar-2020 11:24:52.110 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+26-Mar-2020 11:24:52.110 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@92d24cd')
+26-Mar-2020 11:26:41.796 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Mar-2020 11:26:41.796 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+26-Mar-2020 11:26:41.796 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@92d24cd')

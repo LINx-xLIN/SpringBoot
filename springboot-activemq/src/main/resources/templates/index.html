@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+<body>
+<h1>Hello</h1>
+<div id="app">
+
+    <input type="text" id="msg">
+    <button @click="send();">添加</button>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var a = new Vue({
+        el: "#app",
+        data: {},
+        methods: {
+            send: function () {
+
+
+
+
+                $.post("/send", {
+                    msg: $("#msg").val()
+                }, function (data) {
+                    alert(data);
+                });
+            }
+        }
+    });
+</script>
+</body>
+</html>
