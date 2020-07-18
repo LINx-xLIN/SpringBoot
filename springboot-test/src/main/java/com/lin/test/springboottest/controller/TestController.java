@@ -1,15 +1,17 @@
 package com.lin.test.springboottest.controller;
 
 
+import com.lin.test.springboottest.pojo.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
+@CrossOrigin
 public class TestController {
 
-    @RequestMapping("/index.do")
-    public String index() {
-        System.out.println("ss");
-        return "index";
+    @PostMapping("/add/user")
+    public String addUser(@RequestBody User user) {
+        System.out.println(user);
+        return "ok";
     }
 }

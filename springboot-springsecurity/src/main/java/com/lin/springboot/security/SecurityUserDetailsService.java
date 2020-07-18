@@ -3,7 +3,6 @@ package com.lin.springboot.security;
 import com.lin.springboot.pojo.BasicPermission;
 import com.lin.springboot.pojo.BasicRole;
 import com.lin.springboot.pojo.BasicUser;
-import com.lin.springboot.security.SecurityUser;
 import com.lin.springboot.service.BasicUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
